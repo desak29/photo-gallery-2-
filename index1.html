@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Unit 1 - Day 1 - Image Gallery: The Planets in HTML</title>
-	<style type= "text/css" media = "screen">
+	<style type= "text/css" media = "all">
 		body{
 			background-color: #16222A;
 				color:#ddd;
@@ -13,13 +13,24 @@
 				width:20%;
 				float:left;
 			}
+			body .gallery .thumbails img{width:95% !important;
 			}
+			.gallery.thumbnails img{width:10%;
+			}
+			
 			.thumbnails img {
-				width:: 85%;
+				width:: 95%;
+				margin:auto;
 				border: 4px solid #555;
 				margin: 0 10px 10px 0;
 
 			}
+			.thumbnails img{
+				width:10% !important;
+			}
+			.thumbnails img:hover{
+				border: 4px solid #808080;
+				cursor: pointer;}
 			.preview img{
 				width:80%;
 				float:right;
@@ -31,24 +42,25 @@
 		</style>
 
 </head>
-	<body>
+	<body style="overflow:hidden;">
 	<!-- create wrapper division. content inside -->
-	<div class="gallery">
+	<div class="gallery" 
+		 style="overflow: hidden;>"
 	<h2>Unit 1 - Day 1 - My First Project</h2>
 					<!-- create a br tag -->
 					<br>
 					<!-- thumbnail section for pics -->
 					<div class="thumbnails">
-						<img src="images/image1.jpg" name="img1" onclick="preview.src=img1.src">
-						<img src="images/image2.jpg" name="img2" onclick="preview.src=img2.src">
-						<img src="images/image3.jpg" name="img3" onclick="preview.src=img3.src">
-						<img src="images/image4.jpg" name="img4" onclick="preview.src=img4.src">
-						<img src="images/image5.jpg" name="img5" onclick="preview.src=img5.src">
+						<img src="../../unit2/a-simple-angularjs-photo-album/images/image1.jpg" name="img1" onclick="preview.src=img1.src">
+						<img src="../../unit2/a-simple-angularjs-photo-album/images/image2.jpg" name="img2" onclick="preview.src=img2.src">
+						<img src="../../unit2/a-simple-angularjs-photo-album/images/image3.jpg" name="img3" onclick="preview.src=img3.src">
+						<img src="../../unit2/a-simple-angularjs-photo-album/images/image4.jpg" name="img4" onclick="preview.src=img4.src">
+						<img src="../../unit2/a-simple-angularjs-photo-album/images/image5.jpg" name="img5" onclick="preview.src=img5.src">
 
 					</div>
-					<div class = "preview"
-					
-						<img name= "preview" src="images/image1.jpg"
+					<div class = "preview"{
+					float:left; width:80%;}
+						<img name= "preview" src="../../unit2/a-simple-angularjs-photo-album/images/image1.jpg"
 					</div>
 					
 
